@@ -14,6 +14,8 @@ public class Circle : IFigure
     
     public double CalculateSquareFigure()
     {
+        if (_radius < 0)
+            throw new Exception("Radius is negative");
         return Math.PI * _radius * _radius;
     }
 }
