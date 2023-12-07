@@ -14,8 +14,8 @@ public class Circle : IFigure
     /// <exception cref="ArgumentException">Get negative radius</exception>
     public Circle(double radius)
     {
-        if (radius < 0)
-            throw new ArgumentException("Radius is negative");
+        if (radius <= 0)
+            throw new ArgumentException("Radius is not positive");
         _radius = radius;
     }
     
