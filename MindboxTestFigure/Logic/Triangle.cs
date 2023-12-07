@@ -37,7 +37,10 @@ public class Triangle : IFigure
     public double CalculateSquareFigure()
     {
         var halfPerimeter = (_sideA + _sideB + _sideC) / 2;
-        return Math.Sqrt(halfPerimeter * (halfPerimeter - _sideA) * (halfPerimeter - _sideB) * (halfPerimeter - _sideC));
+        return Math.Sqrt(halfPerimeter * 
+                         (halfPerimeter - _sideA) * 
+                         (halfPerimeter - _sideB) * 
+                         (halfPerimeter - _sideC));
     }
     
     /// <summary>
